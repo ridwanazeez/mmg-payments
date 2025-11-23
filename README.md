@@ -153,7 +153,7 @@ When making changes to this module:
 
 ## Requirements
 
-- PHP 8.1 or higher
+- PHP 8.2 or higher
 - Laravel 12.x
 - nwidart/laravel-modules ^12.0
 - joshbrw/laravel-module-installer: ^2.0
