@@ -32,7 +32,8 @@
             ],
             "aliases": {}
         },
-        "module-dir": "Modules"
+        "module-dir": "Modules",
+        "installer-name": "MMG"
     },
     "autoload": {
         "psr-4": {
