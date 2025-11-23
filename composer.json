@@ -1,5 +1,6 @@
 {
     "name": "ridwanazeez/mmg-module",
+    "version": "1.0.0",
     "description": "Laravel module for MMG Payments integration",
     "type": "laravel-module",
     "license": "MIT",
