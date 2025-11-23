@@ -20,6 +20,24 @@ composer require nwidart/laravel-modules
 composer require joshbrw/laravel-module-installer
 ```
 
+3. **Allow the Module Installer Plugin** - Add this to your project's `composer.json`:
+
+```json
+{
+  "config": {
+    "allow-plugins": {
+      "joshbrw/laravel-module-installer": true
+    }
+  }
+}
+```
+
+Or run this command when prompted during installation:
+
+```bash
+composer config allow-plugins.joshbrw/laravel-module-installer true
+```
+
 For detailed setup instructions, see the [Laravel Modules documentation](https://github.com/nWidart/laravel-modules).
 
 ### Install the Module
@@ -34,15 +52,15 @@ For development/private repositories, add to your `composer.json`:
 
 ```json
 {
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/ridwanazeez/mmg-module.git"
-        }
-    ],
-    "require": {
-        "ridwanazeez/mmg-module": "master"
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/ridwanazeez/mmg-module.git"
     }
+  ],
+  "require": {
+    "ridwanazeez/mmg-module": "master"
+  }
 }
 ```
 
@@ -95,10 +113,10 @@ MMG_SECRET_KEY=your-secret-key
 
 **Required Environment Variables:**
 
--   `BASE_URL` - MMG API base URL
--   `X_CLIENT_ID` - Your MMG client ID
--   `MERCHANT_ID` - Your MMG merchant ID
--   `MMG_SECRET_KEY` - Your MMG secret key for authentication
+- `BASE_URL` - MMG API base URL
+- `X_CLIENT_ID` - Your MMG client ID
+- `MERCHANT_ID` - Your MMG merchant ID
+- `MMG_SECRET_KEY` - Your MMG secret key for authentication
 
 ## Usage
 
@@ -120,33 +138,29 @@ When making changes to this module:
 
 1. Make your changes
 2. Commit to Git:
-    ```bash
-    git add .
-    git commit -m "Description of changes"
-    ```
+   ```bash
+   git add .
+   git commit -m "Description of changes"
+   ```
 3. Push to repository:
-    ```bash
-    git push
-    ```
+   ```bash
+   git push
+   ```
 4. Update version in consuming projects:
-    ```bash
-    composer update ridwanazeez/mmg-module
-    ```
+   ```bash
+   composer update ridwanazeez/mmg-module
+   ```
 
 ## Requirements
 
--   PHP 8.2 or higher
--   Laravel 12.x
--   nwidart/laravel-modules ^11.0
+- PHP 8.1 or higher
+- Laravel 12.x
+- nwidart/laravel-modules ^12.0
+- joshbrw/laravel-module-installer: ^2.0
 
 ## License
 
 MIT License. See LICENSE file for details.
-
-## Author
-
-**Ridwan Azeez**  
-Email: ridwanazeez2000@gmail.com
 
 ## Contributing
 
