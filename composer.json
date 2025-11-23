@@ -1,0 +1,51 @@
+{
+    "name": "ridwanazeez/mmg-module",
+    "description": "Laravel module for MMG Payments integration",
+    "type": "laravel-module",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "module",
+        "mmg",
+        "payments",
+        "guyana"
+    ],
+    "homepage": "https://github.com/ridwanazeez/mmg-module",
+    "authors": [
+        {
+            "name": "Ridwan Azeez",
+            "email": "ridwanazeez2000@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "nwidart/laravel-modules": "^11.0",
+        "joshbrw/laravel-module-installer": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MMG\\Providers\\MMGServiceProvider"
+            ],
+            "aliases": {}
+        },
+        "module-dir": "Modules"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MMG\\": "app/",
+            "Modules\\MMG\\Database\\Factories\\": "database/factories/",
+            "Modules\\MMG\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\MMG\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

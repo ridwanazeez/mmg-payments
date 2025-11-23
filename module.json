@@ -1,0 +1,16 @@
+{
+    "name": "MMG",
+    "alias": "mmg",
+    "description": "MMG Payments integration module for Laravel",
+    "keywords": [
+        "mmg",
+        "payments",
+        "guyana",
+        "payment-gateway"
+    ],
+    "priority": 0,
+    "providers": [
+        "Modules\\MMG\\Providers\\MMGServiceProvider"
+    ],
+    "files": []
+}
